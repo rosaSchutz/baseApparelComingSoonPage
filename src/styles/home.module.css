@@ -1,0 +1,211 @@
+.logoMobile {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 32px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.title::before {
+    content: "We're";
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 0px 25px 0px;
+}
+
+.text {
+    color: var(--desaturated-red);
+    text-align: center;
+    padding: 0 40px 0 40px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (max-width: 767px) {
+    .main {
+        background: linear-gradient(var(--linear-gradient-1));
+    }
+
+    .heroDesktop{
+        display: none;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .heroMobile {
+        width: 100vw;
+    }
+
+    .heroImg {
+        width: 100vw;
+    }
+}
+
+@media ((min-width: 768px) and (max-width: 1339px)) {
+    .main {
+        background-image: var(--bg-desktop);
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-direction: row-reverse;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .logoMobile {
+        display: none;
+    }
+
+    .logoDesktop {
+        width: 320px;
+    }
+    
+    .header {
+        display: none;
+    }
+
+    .heroMobile{
+        display: none;
+    }
+
+    .heroDesktop{
+        height: 100vh;
+        width: 43vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .contentDiv {
+        align-items: flex-start;
+        width: 60%;
+        gap: 30px;
+    }
+
+    .text {
+        text-align: left;
+        padding: 0;
+        font-size: 30px;
+        width: 85%;
+        line-height: 55px;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 8.5rem;
+        font-weight: 400;
+        letter-spacing: 28px;
+        margin-top: 0;
+    }
+
+    .contentImg {
+        display: flex;
+        width: 60%;
+    }
+
+    .heroImg {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main {
+        background-image: var(--bg-desktop);
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-direction: row-reverse;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .logoMobile {
+        display: none;
+    }
+
+    .logoDesktop {
+        width: 320px;
+    }
+    
+    .header {
+        display: none;
+    }
+
+    .heroMobile{
+        display: none;
+    }
+
+    .heroDesktop{
+        height: 100vh;
+        width: 43vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .contentDiv {
+        align-items: flex-start;
+        width: 60%;
+        gap: 30px;
+    }
+
+    .text {
+        text-align: left;
+        padding: 0;
+        font-size: 30px;
+        width: 85%;
+        line-height: 55px;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 8.5rem;
+        font-weight: 400;
+        letter-spacing: 28px;
+        margin-top: 0;
+    }
+
+    .contentImg {
+        display: flex;
+        width: 60%;
+    }
+
+    .heroImg {
+        display: flex;
+    }
+}
